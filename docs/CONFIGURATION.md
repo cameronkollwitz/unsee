@@ -34,21 +34,20 @@ with identical label set will be deduplicated and labeled with each Alertmanager
 server they were observed at. This allows using unsee to collect alerts from a
 pair of Alertmanager instances running in
 [HA mode](https://prometheus.io/docs/alerting/alertmanager/#high-availability).
+
 Syntax:
 
-```yaml
-alertmanager:
-  interval: duration
-  servers:
-    - name: string
-      uri: string
-      timeout: duration
-      proxy: bool
-      tls:
-        ca: string
-        cert: string
-        key: string
-```
+    alertmanager:
+      interval: duration
+      servers:
+        - name: string
+          uri: string
+          timeout: duration
+          proxy: bool
+          tls:
+            ca: string
+            cert: string
+            key: string
 
 * `interval` - how often alerts should be refreshed, a string in
   [time.Duration](https://golang.org/pkg/time/#ParseDuration) format. If set to
