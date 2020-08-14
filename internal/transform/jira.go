@@ -5,7 +5,7 @@ import (
 	"log"
 	"regexp"
 
-	"github.com/cloudflare/unsee/internal/models"
+	"github.com/cameronkollwitz/unsee/internal/models"
 )
 
 type jiraDetectRule struct {

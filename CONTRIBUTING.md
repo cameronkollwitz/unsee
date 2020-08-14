@@ -79,7 +79,8 @@ directory.
 To support a new release that breaks API following changes needs to be done:
 
 * Verify that `GetVersion()` function can still correctly read remote
-  Alertmanager version via `/api/v1/status` endpoint, adapt it if needed.
+  Alertmanager version via `/api/v2/status` endpoint, adapt it if needed.
+  * Updated all references to `/api/v1/` to `/api/v2/` for Alertmanager v0.21.0
 * Create a new mapper package implementing unmarshaling of alerts and/or
   silences (depending if both need a new code) under mapper/vXY (X major
   Alertmanager version, Y minor version).

@@ -3,7 +3,7 @@ package uri_test
 import (
 	"testing"
 
-	"github.com/cloudflare/unsee/internal/uri"
+	"github.com/cameronkollwitz/unsee/internal/uri"
 )
 
 type joinURLTest struct {
@@ -25,8 +25,8 @@ var joinURLTests = []joinURLTest{
 	},
 	joinURLTest{
 		base: "http://am.example.com",
-		sub:  "/api/v1/alerts",
-		url:  "http://am.example.com/api/v1/alerts",
+		sub:  "/api/v2/alerts",
+		url:  "http://am.example.com/api/v2/alerts",
 	},
 }
 

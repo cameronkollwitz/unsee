@@ -4,8 +4,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/cloudflare/unsee/internal/alertmanager"
-	"github.com/cloudflare/unsee/internal/config"
+	"github.com/cameronkollwitz/unsee/internal/alertmanager"
+	"github.com/cameronkollwitz/unsee/internal/config"
 )
 
 func BenchmarkDedupAlerts(b *testing.B) {

@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"regexp"
 
-	"github.com/cloudflare/unsee/internal/models"
-	"github.com/cloudflare/unsee/internal/slices"
+	"github.com/cameronkollwitz/unsee/internal/models"
+	"github.com/cameronkollwitz/unsee/internal/slices"
 )
 
 // FilterT provides methods for interacting with alert filters

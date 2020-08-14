@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/cloudflare/unsee/internal/uri"
+	"github.com/cameronkollwitz/unsee/internal/uri"
 	"github.com/pmezard/go-difflib/difflib"
 
 	log "github.com/sirupsen/logrus"

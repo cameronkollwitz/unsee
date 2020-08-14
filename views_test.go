@@ -11,10 +11,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/cloudflare/unsee/internal/config"
-	"github.com/cloudflare/unsee/internal/mock"
-	"github.com/cloudflare/unsee/internal/models"
-	"github.com/cloudflare/unsee/internal/slices"
+	"github.com/cameronkollwitz/unsee/internal/config"
+	"github.com/cameronkollwitz/unsee/internal/mock"
+	"github.com/cameronkollwitz/unsee/internal/models"
+	"github.com/cameronkollwitz/unsee/internal/slices"
 
 	cache "github.com/patrickmn/go-cache"
 	log "github.com/sirupsen/logrus"
@@ -107,9 +107,9 @@ func mockAlerts(version string) {
 
 	apiCache = cache.New(cache.NoExpiration, 10*time.Second)
 
-	mock.RegisterURL("http://localhost/api/v1/status", version, "status")
-	mock.RegisterURL("http://localhost/api/v1/silences", version, "silences")
-	mock.RegisterURL("http://localhost/api/v1/alerts/groups", version, "alerts/groups")
+	mock.RegisterURL("http://localhost/api/v2/status", version, "status")
+	mock.RegisterURL("http://localhost/api/v2/silences", version, "silences")
+	mock.RegisterURL("http://localhost/api/v2/alerts/groups", version, "alerts/groups")
 
 	pullFromAlertmanager()
 }

@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/cloudflare/unsee/internal/models"
+	"github.com/cameronkollwitz/unsee/internal/models"
 )
 
 type alertListSortTest struct {

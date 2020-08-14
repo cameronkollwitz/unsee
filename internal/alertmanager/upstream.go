@@ -6,8 +6,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/cloudflare/unsee/internal/models"
-	"github.com/cloudflare/unsee/internal/uri"
+	"github.com/cameronkollwitz/unsee/internal/models"
+	"github.com/cameronkollwitz/unsee/internal/uri"
 
 	log "github.com/sirupsen/logrus"
 )

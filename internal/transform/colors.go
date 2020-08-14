@@ -5,9 +5,9 @@ import (
 	"io"
 	"math/rand"
 
-	"github.com/cloudflare/unsee/internal/config"
-	"github.com/cloudflare/unsee/internal/models"
-	"github.com/cloudflare/unsee/internal/slices"
+	"github.com/cameronkollwitz/unsee/internal/config"
+	"github.com/cameronkollwitz/unsee/internal/models"
+	"github.com/cameronkollwitz/unsee/internal/slices"
 
 	"github.com/hansrodtang/randomcolor"
 )

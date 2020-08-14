@@ -8,7 +8,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/cloudflare/unsee/internal/uri"
+	"github.com/cameronkollwitz/unsee/internal/uri"
 	"github.com/spf13/pflag"
 	"github.com/spf13/viper"
 

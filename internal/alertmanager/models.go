@@ -10,11 +10,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/cloudflare/unsee/internal/config"
-	"github.com/cloudflare/unsee/internal/mapper"
-	"github.com/cloudflare/unsee/internal/models"
-	"github.com/cloudflare/unsee/internal/transform"
-	"github.com/cloudflare/unsee/internal/uri"
+	"github.com/cameronkollwitz/unsee/internal/config"
+	"github.com/cameronkollwitz/unsee/internal/mapper"
+	"github.com/cameronkollwitz/unsee/internal/models"
+	"github.com/cameronkollwitz/unsee/internal/transform"
+	"github.com/cameronkollwitz/unsee/internal/uri"
 
 	log "github.com/sirupsen/logrus"
 )

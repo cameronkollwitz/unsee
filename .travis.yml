@@ -79,5 +79,5 @@ jobs:
           - unsee-*.tar.gz
           - sha512sum.txt
         on:
-          repo: cloudflare/unsee
+          repo: cameronkollwitz/unsee
           tags: true

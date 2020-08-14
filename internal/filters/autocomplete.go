@@ -1,7 +1,7 @@
 package filters
 
 import (
-	"github.com/cloudflare/unsee/internal/models"
+	"github.com/cameronkollwitz/unsee/internal/models"
 )
 
 type autocompleteFactory func(name string, operators []string, alerts []models.Alert) []models.Autocomplete

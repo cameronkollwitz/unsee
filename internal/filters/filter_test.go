@@ -5,9 +5,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/cloudflare/unsee/internal/alertmanager"
-	"github.com/cloudflare/unsee/internal/filters"
-	"github.com/cloudflare/unsee/internal/models"
+	"github.com/cameronkollwitz/unsee/internal/alertmanager"
+	"github.com/cameronkollwitz/unsee/internal/filters"
+	"github.com/cameronkollwitz/unsee/internal/models"
 
 	log "github.com/sirupsen/logrus"
 )

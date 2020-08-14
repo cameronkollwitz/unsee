@@ -1,8 +1,8 @@
 package transform
 
 import (
-	"github.com/cloudflare/unsee/internal/filters"
-	"github.com/cloudflare/unsee/internal/models"
+	"github.com/cameronkollwitz/unsee/internal/filters"
+	"github.com/cameronkollwitz/unsee/internal/models"
 )
 
 // BuildAutocomplete takes an alert object and generates list of autocomplete
