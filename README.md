@@ -1,4 +1,6 @@
-# unsee
+# Unsee Alert Dashboard
+
+[![Build Status](https://travis-ci.org/cameronkollwitz/unsee.svg?branch=master)](https://travis-ci.org/cameronkollwitz/unsee)
 
 Alert dashboard for
 [Prometheus Alertmanager](https://prometheus.io/docs/alerting/alertmanager/).
@@ -18,7 +20,7 @@ that [GitHub provides](https://github.com/cameronkollwitz/unsee/releases.atom)
 To get email notifications please use one of the free services providing
 _RSS to email_ notifications, like [Blogtrottr](https://blogtrottr.com/).
 
-## Supported Alertmanager versions
+## Supported Alertmanager Versions
 
 Alertmanager's API isn't stable yet and can change between releases, see
 `VERSIONS` in [internal/mock/Makefile](/internal/mock/Makefile) for list of all
@@ -44,9 +46,9 @@ unsee process metrics are accessible under `/metrics` path by default.
 If you set the `--listen.prefix` option a path relative to it will be
 used.
 
-## Building and running
+## Building and Running
 
-### Building from source
+### Building from Source
 
 To clone git repo and build the binary yourself run:
 

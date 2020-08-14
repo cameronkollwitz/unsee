@@ -1,9 +1,9 @@
-FROM node:8-alpine as nodejs-builder
+FROM node:14.8.0-alpine3.11 as nodejs-builder
 RUN apk add --update make git
 COPY . /unsee
 RUN make -C /unsee webpack
 
-FROM golang:1.10.1-alpine as go-builder
+FROM 1.15.0-alpine3.12 as go-builder
 COPY --from=nodejs-builder /unsee /go/src/github.com/cameronkollwitz/unsee
 ARG VERSION
 RUN apk add --update make git
