@@ -108,7 +108,7 @@ func mockAlerts(version string) {
 	apiCache = cache.New(cache.NoExpiration, 10*time.Second)
 
 	mock.RegisterURL("http://localhost/api/v2/status", version, "status")
-	mock.RegisterURL("http://localhost/api/v2/silences", version, "silences")
+	mock.RegisterURL("http://localhost/api/v1/silences", version, "silences")
 	mock.RegisterURL("http://localhost/api/v2/alerts/groups", version, "alerts/groups")
 
 	pullFromAlertmanager()
