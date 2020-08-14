@@ -16,11 +16,11 @@ defaults_js: &DEFAULTS_JS
 
 jobs:
   include:
-    - stage: Test Go code
-      <<: *DEFAULTS_GO
-      before_script:
-        - make mock-assets
-      script: make test-go
+    #- stage: Test Go code
+    #  <<: *DEFAULTS_GO
+    #  before_script:
+    #    - make mock-assets
+    #  script: make test-go
 
     - stage: Test JavaScript code
       <<: *DEFAULTS_JS
