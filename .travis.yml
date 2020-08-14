@@ -22,32 +22,32 @@ jobs:
     #    - make mock-assets
     #  script: make test-go
 
-    - stage: Test JavaScript code
-      <<: *DEFAULTS_JS
-      env:
-        - NODE_ENV=test
-      script: make test-js
+    #- stage: Test JavaScript code
+    #  <<: *DEFAULTS_JS
+    #  env:
+    #    - NODE_ENV=test
+    #  script: make test-js
 
-    - stage: Lint Go code
-      <<: *DEFAULTS_GO
-      script: make lint-go
+    #- stage: Lint Go code
+    #  <<: *DEFAULTS_GO
+    #  script: make lint-go
 
-    - stage: Lint JavaScript code
-      <<: *DEFAULTS_JS
-      script: make lint-js
+    #- stage: Lint JavaScript code
+    #  <<: *DEFAULTS_JS
+    #  script: make lint-js
 
-    - stage: Lint docs
-      <<: *DEFAULTS_JS
-      script: make lint-docs
+    #- stage: Lint docs
+    #  <<: *DEFAULTS_JS
+    #  script: make lint-docs
 
-    - stage: Build Docker image
-      language: generic
-      sudo: true
-      addons:
-        apt:
-          packages:
-            - docker-ce
-      script: make docker-image
+    #- stage: Build Docker image
+    #  language: generic
+    #  sudo: true
+    #  addons:
+    #    apt:
+    #      packages:
+    #        - docker-ce
+    #  script: make docker-image
 
     - stage: Build and Deploy
       <<: *DEFAULTS_GO
